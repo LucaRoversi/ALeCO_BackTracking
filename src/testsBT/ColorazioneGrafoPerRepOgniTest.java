@@ -16,12 +16,14 @@ class ColorazioneGrafoPerRepOgniTest {
                       , { true , false, true , false, false } };
   // Al piu' tanti colori quanti sono i nodi.
   int[] colori = new int[grafo.length]; 
-  for (int i = 0; i < colori.length; i++)
+//  for (int i = 0; i < colori.length; i++)
+    for (int i = 0; i < 3; i++)
     colori[i] = i; 
   ColorazioneGrafoPerRepOgni.risposte(
       grafo, 
       colori, 
-      new int[colori.length], // soluzione 
+//      new int[colori.length], // soluzione 
+      new int[5], // soluzione 
       0);
   }
   
@@ -33,7 +35,8 @@ class ColorazioneGrafoPerRepOgniTest {
                       , { false, true , false } };
   // Al piu' tanti colori quanti sono i nodi.
   int[] colori = new int[grafo.length]; 
-  for (int i = 0; i < colori.length; i++)
+//  for (int i = 0; i < colori.length; i++)
+    for (int i = 0; i < 2; i++)
     colori[i] = i; 
   ColorazioneGrafoPerRepOgni.risposte(
       grafo, 

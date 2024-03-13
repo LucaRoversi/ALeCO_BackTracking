@@ -15,7 +15,11 @@ package colorazionegrafoBT;
 
 public class ColorazioneGrafoPerRepOgni {
 	
-  public static void risposte(boolean[][] grafo, int[] colori, int[] soluzione, int j) {
+  public static void risposte(
+      boolean[][] grafo, 
+      int[] colori, 
+      int[] soluzione, 
+      int j) {
 
     if (!completa(soluzione, j)) {
       if (!rifiuta(grafo, soluzione, j)) {
